@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:tns="http://paysecure.example.com/wsdl/PaySecureGateway">
+  <soapenv:Body>
+    <soapenv:Fault>
+      <faultcode>soapenv:Server</faultcode>
+      <faultstring>Charge could not be completed</faultstring>
+      <detail>
+        <tns:PaySecureFault>
+          <tns:ErrorCode>card_declined</tns:ErrorCode>
+          <tns:ErrorMessage>The card issuer declined this transaction.</tns:ErrorMessage>
+          <tns:MerchantOrderId>CE-ORD-100245</tns:MerchantOrderId>
+        </tns:PaySecureFault>
+      </detail>
+    </soapenv:Fault>
+  </soapenv:Body>
+</soapenv:Envelope>
