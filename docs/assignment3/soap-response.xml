@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:tns="http://paysecure.example.com/wsdl/PaySecureGateway">
+  <soapenv:Body>
+    <tns:ChargeResponse>
+      <tns:Acknowledgement>Success</tns:Acknowledgement>
+      <tns:TransactionId>PS-TXN-88213377</tns:TransactionId>
+      <tns:MerchantOrderId>CE-ORD-100245</tns:MerchantOrderId>
+      <tns:AmountCharged>349.00</tns:AmountCharged>
+      <tns:Timestamp>2026-08-26T14:32:10Z</tns:Timestamp>
+    </tns:ChargeResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
